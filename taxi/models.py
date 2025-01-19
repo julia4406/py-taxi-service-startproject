@@ -29,7 +29,7 @@ class Car(models.Model):
         verbose_name_plural = "cars"
 
     def __str__(self):
-        return {self.model}
+        return self.model
 
 
 class Driver(AbstractUser):
